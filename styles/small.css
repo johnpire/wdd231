@@ -4,6 +4,14 @@
   --tertiary: #EDEBD7;
 }
 
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body, p, li {
+  font-family: 'Roboto', sans-serif;
+}
+
 
 /* HEADER */
 header {
@@ -86,6 +94,7 @@ main h2 {
     background-color: var(--secondary);
     margin-bottom: 0px;
     text-align: center;
+    padding: 2px;
 }
 
 .about-me {
