@@ -1,0 +1,36 @@
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.1rem;
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: #eee;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+	margin: 1rem 0;
+	text-shadow: 0 0 30px #111;
+}
+
+p {
+	margin: 0.5rem;
+}

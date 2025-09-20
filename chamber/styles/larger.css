@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 32rem) {
     header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
@@ -7,7 +7,7 @@
     /* HEADER */
 
     header {
-      grid-template-columns: 24px auto;
+      grid-template-columns: 24px auto auto;
     }
     
     .hamburger {
@@ -17,6 +17,9 @@
     .navigation {
         display: block;
         border-bottom: solid 1px #eee;
+        grid-column: 3;
+        border-top: none;
+        justify-self: end;
     }
 
     .navigation ul {display: flex;}
@@ -24,7 +27,7 @@
     .navigation a {
         border: none;
     }
-    
+
     /* MAIN */
     .main-content {
         display: grid;
@@ -53,5 +56,18 @@
     }
     .course {
         margin: 0;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    .contact-info, .copyright {
+        padding: 0 1rem;
     }
 }

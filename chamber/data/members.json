@@ -1,0 +1,74 @@
+{
+  "companies": [
+    {
+      "name": "Marimekko Oyj",
+      "address": "Puusepänkatu 4, 00880 Helsinki, Finland",
+      "phone": "+358 9 758 71",
+      "website": "https://www.marimekko.com",
+      "image": "marimekko.jpg",
+      "membership": 3,
+      "category": "Design & Retail",
+      "description": "A globally recognized design house celebrated for its original prints and colors."
+    },
+    {
+      "name": "Supercell Oy",
+      "address": "Itämerenkatu 11-13, 00180 Helsinki, Finland",
+      "phone": "+358 9 123 456",
+      "website": "https://supercell.com",
+      "image": "supercell.jpg",
+      "membership": 3,
+      "category": "Gaming & Technology",
+      "description": "A leading mobile game developer known for titles such as Clash of Clans and Brawl Stars."
+    },
+    {
+      "name": "Cafe Suomi",
+      "address": "Korkeavuorenkatu 27, 00130 Helsinki, Finland",
+      "phone": "+358 50 987 6543",
+      "website": "https://cafesuomi.example.com",
+      "image": "cafesuomi.jpg",
+      "membership": 1,
+      "category": "Food & Beverage",
+      "description": "A cozy local café serving Finnish pastries, artisan coffee, and homestyle meals."
+    },
+    {
+      "name": "Helsinki Design Hub",
+      "address": "Annankatu 18, 00120 Helsinki, Finland",
+      "phone": "+358 45 567 8901",
+      "website": "https://helsinkidesignhub.example.com",
+      "image": "designhub.jpg",
+      "membership": 2,
+      "category": "Creative & Arts",
+      "description": "A co-working and event space for artists, designers, and innovators."
+    },
+    {
+      "name": "Nordic Tech Solutions",
+      "address": "Mannerheimintie 14, 00100 Helsinki, Finland",
+      "phone": "+358 40 234 5678",
+      "website": "https://nordictech.example.com",
+      "image": "nordictech.jpg",
+      "membership": 2,
+      "category": "IT Services",
+      "description": "Providing IT consulting, cloud solutions, and digital transformation services to local businesses."
+    },
+    {
+      "name": "GreenWave Energy",
+      "address": "Lönnrotinkatu 25, 00180 Helsinki, Finland",
+      "phone": "+358 50 321 7654",
+      "website": "https://greenwaveenergy.example.com",
+      "image": "greenwave.jpg",
+      "membership": 3,
+      "category": "Energy & Environment",
+      "description": "Renewable energy provider focused on sustainable solar and wind power projects."
+    },
+    {
+      "name": "Suomi Travel Agency",
+      "address": "Aleksanterinkatu 22, 00170 Helsinki, Finland",
+      "phone": "+358 9 987 1234",
+      "website": "https://suomitravel.example.com",
+      "image": "suomitravel.jpg",
+      "membership": 1,
+      "category": "Tourism & Hospitality",
+      "description": "Helping visitors discover the best of Finland through guided tours and travel packages."
+    }
+  ]
+}
