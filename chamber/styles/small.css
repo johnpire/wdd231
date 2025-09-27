@@ -89,121 +89,152 @@ h1 {
 }
 
 /* MAIN */
-
-/* MAIN */
 main {
     padding: 1rem 10px;
 }
 
+main h1 {
+    padding-top: 1rem;
+}
+
 main h2 {
-    color: var(--primary);
     background-color: var(--secondary);
     margin-bottom: 0px;
     text-align: center;
     padding: 2px;
 }
 
-.about-me {
-    color: var(--primary);
-    background-color: #eee;
-    margin: 0;
-    padding: 0.5rem;
+/* HOME PAGE */
+
+/* hero */
+.hero {
+    margin: -1rem -10px ;
+    position: relative;
 }
 
-.profile {
-    background-color: #eee;
-    padding: 2rem;
+.hero img {
+    width: 100%;
+    height: 100%;
 }
 
-.profile img {
-    display: block;
-    max-width: 38rem;
+.cta-button {
+  position: absolute;
+  right: 40.2%;    
+  bottom: 13%;     
+  padding: 0.6em 1em;
+  color: #000;
+  background: var(--secondary);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: clamp(0.35rem, 3vw, 1rem);
+}
+
+.cta-button:hover {
+    background: var(--primary);
+    color: #fff;
+  }
+
+/* event */
+
+.event-img {
+    width: 100%;
     height: auto;
-    margin: 0 auto 1rem auto;
-    border-radius: 5px;
 }
 
-.course-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-    border-bottom: solid 1px #ddd;
+.event-img img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    display: block;
 }
 
-.course-options button {
-    flex: 1 1 30%;
-    min-width: 120px;
-    color: var(--primary);
-    background-color: #fff;
-    border: solid 1px var(--primary);
-    border-radius: 5px;
-    padding: 0.5rem 2rem;
+/* current weather */
+.weather-current {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #f3f3f3;
     margin: 1rem 0;
-    font-weight: bold; 
 }
 
-.course-options button:hover {
-    background-color: var(--tertiary);
-    color: var(--primary);
-    border: solid 2px var(--primary);
-    cursor: pointer;
+.weather-current h2 {
+    grid-column: 1/3;
 }
 
-.course-all {
-    display: none;
-}
-.course-all.show {
-    display: block;
+.weather-current img {
+    width: 120px;
+    height: 120px;
 }
 
-.course-cse {
-    display: none;
-}
-.course-cse.show {
-    display: block;
+.weather-current p {
+    margin: 8px;
 }
 
-.course-wdd {
-    display: none;
-}
-.course-wdd.show {
-    display: block;
-}
-
-.course {
-    gap: 1rem;
-    padding: 0.5rem 10px;
-    color: var(--primary);
-    background-color: #fff;
-    border: solid 1px var(--primary);
-    border-radius: 5px;
+.weather-current #temp-current {
     font-weight: bold;
+}
+
+.weather-current #description {
+    font-style: italic;
+}
+
+/* weather forecast */
+.weather-forecast {
+    display: grid;
+    background-color: #f3f3f3;
+}
+
+.weather-forecast p {
+    font-size: large;
+    margin: 0.5rem 1rem;
+}
+
+/* spotlight */
+.spotlight section {
+    background-color: #eee;
+    border: 1.5px solid var(--primary);
+    margin: 1.5rem 0.5rem;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.spotlight h3 {
+    background-color: var(--secondary);
     text-align: center;
+    grid-column: 1/4;
 }
 
-.completed-course {
-    background-color: var(--tertiary);
+.spotlight div {
+    margin: 0.5rem;
+    grid-column: 2/4;
 }
 
-.completed-course::before {
-  content: "✔";    
-  color: var(--primary);
-  font-weight: bold;
-  margin-right: 8px;
+.spotlight img {
+    align-self: start;
+    margin-top: 30px;
+    justify-self: center;
 }
 
-#total-credits {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--primary);
+.spotlight .bronze {
+    color: #fff;
+    background-color: #5A2D0C;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
 }
 
+.spotlight .silver {
+    color: #fff;
+    background-color: #444444;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+}
 
-
-
+.spotlight .gold {
+    color: #fff;
+    background-color: #665200;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+}
 
 /* DIRECTORY */
 .cards {

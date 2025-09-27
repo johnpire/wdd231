@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Official homepage of the Helsinki Chamber of Commerce. Learn about events, business resources, member services, and opportunities to grow your business in Helsinki.">
     <title>Home</title>
     <meta name="author" content="John Carlo Kitongan">
     
     <meta property="og:title" content="Home">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="Official homepage of the Helsinki Chamber of Commerce. Learn about events, business resources, member services, and opportunities to grow your business in Helsinki.">
     <meta property="og:image" content="https://johnpire.github.io/wdd231/chamber/images/logo.svg">
     <meta property="og:url" content="https://johnpire.github.io/wdd231/index.html">
 
@@ -20,7 +20,8 @@
     <!-- JS -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
       <img src="images/logo.svg" alt="site logo" width="1" height="1">
       <span>Helsinki Chamber of Commerce</span>
       <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-      <nav id="nav-bar" class="navigation">
+      <nav id="nav-bar" class="navigation"> 
         <ul>
           <li><a href="index.html" id="index">Home</a></li>
           <li><a href="directory.html" id="directory">Directory</a></li>
@@ -45,7 +46,44 @@
       </nav>
     </header>
     <main>
+      <div class="hero">
+        <picture>
+          <source srcset="images/hero-desktop.jpg" media="(min-width: 512px)">
+          <img src="images/hero-mobile.jpg" alt="Hero Image" width="1024" height="388">
+        </picture>
+        <a href="join.html" class="cta-button">Join Now!</a>
+      </div>
+      <h1>Home</h1>
+      <div class="home-subcontent">
+        <div class="events">
+          <h2>Events</h2>
+          <div class="event-img">
+            <img src="images/placeholder.jpg" alt="Events Image" width="800" height="800">
+          </div>
+        </div>
 
+        <div class="weather-current">
+          <h2>Current Weather</h2>
+          <img id="graphic" src="images/weather.svg" alt="Weather Icon">
+          <div class="description">
+            <p id="temp-current"></p>
+            <p id="description"></p>
+            <p id="temp-high"></p>
+            <p id="temp-low"></p>
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+          </div>
+        </div>
+
+        <div class="weather-forecast">
+          <h2>Weather Forecast</h2>
+          <p id="today"></p>
+          <p id="tomorrow"></p>
+          <p id="overmorrow"></p>
+        </div>
+      </div>
+      <div id="spotlight" class="spotlight"></div>
     </main>
     <footer>
         <div class="contact-info">
