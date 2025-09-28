@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official homepage of the Helsinki Chamber of Commerce. Learn about events, business resources, member services, and opportunities to grow your business in Helsinki.">
-    <title>Helsinki Chamber of Commerce – Business Resources, Events & Membership</title>
+    <title>Helsinki Chamber of Commerce - Business Resources, Events & Membership</title>
     <meta name="author" content="John Carlo Kitongan">
     
     <meta property="og:title" content="Home">
@@ -20,6 +20,7 @@
     <!-- JS -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/events.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
 
@@ -55,10 +56,16 @@
       </div>
       <h1>Home</h1>
       <div class="home-subcontent">
+
         <div class="events">
           <h2>Events</h2>
-          <div class="event-img">
-            <img src="images/placeholder.jpg" alt="Events Image" width="800" height="800">
+          <div class="slider">
+            <img src="images/event-1.jpg" alt="Event 1" class="active">
+            <img src="images/event-2.jpg" alt="Event 2">
+            <img src="images/event-3.jpg" alt="Event 3">
+
+            <button class="event-btn prev">&#10094;</button>
+            <button class="event-btn next">&#10095;</button>
           </div>
         </div>
 
