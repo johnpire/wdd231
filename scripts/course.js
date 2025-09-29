@@ -114,25 +114,36 @@ function createCourseTemplate(filteredCourses) {
   container.innerHTML = "";
 
   filteredCourses.forEach(c => {
-    let courseEl = document.createElement("p");
-    courseEl.classList.add("course");
-    courseEl.textContent = `${c.subject} ${c.number}`;
-    container.appendChild(courseEl);
-  });
-}
-
-
-function createCourseTemplate(filteredCourses) {
-  const container = document.querySelector("#courses");
-  container.innerHTML = "";
-
-  filteredCourses.forEach(c => {
-    let courseEl = document.createElement("p");
+    let courseEl = document.createElement("button");
     if (c.completed) {
       courseEl.classList.add("completed-course");
     }
     courseEl.classList.add("course");
     courseEl.textContent = `${c.subject} ${c.number}`;
     container.appendChild(courseEl);
+
+    courseEl.addEventListener('click', () => {
+    displayCourseDetails(c);
+    });
+  });
+}
+
+function displayCourseDetails(course) {
+  const courseDetails = document.querySelector("#course-details")
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+
+  const closeModal = document.querySelector("#closeModal");
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
   });
 }
